@@ -1,5 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import {ParseService} from "./parse.service";
+import {LoService} from "./lo.service";
 
 describe('AppComponent', () => {
   beforeEach(() => {
@@ -7,6 +9,8 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      providers: [LoService, ParseService],
+
     });
     TestBed.compileComponents();
   });
