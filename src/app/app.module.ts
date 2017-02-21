@@ -7,6 +7,33 @@ import { AppComponent } from './app.component';
 import {LoService} from "./lo.service";
 import {ParseService} from "./parse.service";
 import { ParsePipe } from './parse.pipe';
+import {RouterModule, Routes} from "@angular/router";
+import {PageNotFoundComponent} from "./404/page-not-found.component";
+import {CountryModule} from "./country/country.module";
+import {Module404} from "./404/404.module";
+import {CountryListComponent} from "./country/country-list.component";
+import {CountryDetailComponent} from "./country/country-detail.component";
+import {QuoteModule} from "./quote/quote.module";
+import {QuoteDetailComponent} from "./quote/quote-detail.component";
+
+let appRoutes: Routes = [
+  { path: 'country',
+    component: CountryListComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'quote',
+    component: QuoteDetailComponent
+  },
+
+  { path: 'country/:id',      component: CountryDetailComponent },
+  { path: '',
+    redirectTo: '/country',
+    pathMatch: 'full'
+  },
+  { path: '**', component: PageNotFoundComponent }
+];
+
 
 @NgModule({
   declarations: [
@@ -14,11 +41,17 @@ import { ParsePipe } from './parse.pipe';
     ParsePipe
   ],
   imports: [
+    QuoteModule,
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    CountryModule,
+    Module404,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [LoService, ParseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
