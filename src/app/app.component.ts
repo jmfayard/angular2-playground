@@ -35,7 +35,8 @@ export class AppComponent {
     {name: 'About', route: '/about'},
     {name: 'Random Quote', route: '/quote'},
     {name: 'Countries', route: '/country'},
-    {name: 'France', route: '/country/fr'}
+    {name: 'France', route: '/country/fr'},
+    {name: 'Login', route: '/user/login'}
   ];
 
 

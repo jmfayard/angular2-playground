@@ -15,6 +15,7 @@ import {CountryListComponent} from "./country/country-list.component";
 import {CountryDetailComponent} from "./country/country-detail.component";
 import {QuoteModule} from "./quote/quote.module";
 import {QuoteDetailComponent} from "./quote/quote-detail.component";
+import { LoginComponent } from './user/login.component';
 
 let appRoutes: Routes = [
   { path: 'country',
@@ -25,7 +26,8 @@ let appRoutes: Routes = [
     path: 'quote',
     component: QuoteDetailComponent
   },
-
+  { path: 'user/login', component: LoginComponent
+  },
   { path: 'country/:id',      component: CountryDetailComponent },
   { path: '',
     redirectTo: '/country',
@@ -38,7 +40,8 @@ let appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    ParsePipe
+    ParsePipe,
+    LoginComponent
   ],
   imports: [
     QuoteModule,
