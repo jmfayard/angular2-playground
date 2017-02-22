@@ -1,11 +1,11 @@
 import {Injectable} from '@angular/core';
-import {Http, Request, RequestMethod, Headers, ResponseContentType, URLSearchParams} from "@angular/http";
+import {Http, Request, RequestMethod, ResponseContentType, URLSearchParams} from "@angular/http";
 import {RequestArgs} from "@angular/http/src/interfaces";
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/startWith';
 
 import {Observable, ReplaySubject} from "rxjs";
-import {ICountry} from "./country-interfaces";
+import {ICountry} from "./country-model";
 
 @Injectable()
 export class CountryService {

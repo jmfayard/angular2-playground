@@ -19,12 +19,26 @@ $ open http://localhost:4200/
 - CSS framework Tachyons http://tachyons.io/ 
 - RX JS reactive library https://github.com/ReactiveX/rxjs
 - [AngularJS plugin](https://github.com/JetBrains/intellij-plugins/tree/master/AngularJS) for Intellij/Webstorm 
+- [Angular official cheatsheet](https://angular.io/cheatsheet)
+- [Angular resources](https://github.com/AngularClass/awesome-angular2)
+- ES6 features summarized http://es6-features.org
+- Flynn NodeJS https://flynn.io/docs/languages/nodejs 
 
+## Installing the Angular CLI 
 
+This project uses the [Angular CLI](https://github.com/angular/angular-cli) 
 
-## Hacking Angular CLI 
+You should install it once
 
-This project uses the [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-beta.32.3.
+```
+$ node --version  ### 6.9 LTS
+$ npm --version  ### 3 or more
+$ npm install -g @angular/cli
+### this takes a while, you can take a coffee
+$ ng help
+```
+
+## Hacking with the angular CLI
 
 Here is how we scafffolded the country repository
 

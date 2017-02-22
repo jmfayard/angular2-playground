@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {CountryService} from "./country.service";
-import {Router, ActivatedRoute} from "@angular/router";
-import {ICountry} from "./country-interfaces";
+import {Router} from "@angular/router";
+import {ICountry} from "./country-model";
 
 @Component({
   selector: 'country-list',

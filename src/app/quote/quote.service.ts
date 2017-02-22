@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {ProgrammingQuote} from "./quote-interfaces";
+import {ProgrammingQuote} from "./quote-model";
 
 @Injectable()
 export class ProgrammingQuoteService {

@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {ProgrammingQuote} from "./quote-interfaces";
+import {ProgrammingQuote} from "./quote-model";
 import {ProgrammingQuoteService} from './quote.service';
 
 @Component({
