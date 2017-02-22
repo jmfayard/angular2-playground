@@ -1,6 +1,6 @@
 {
   "name": "ng-music",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
@@ -20,13 +20,12 @@
     "@angular/platform-browser": "^2.4.0",
     "@angular/platform-browser-dynamic": "^2.4.0",
     "@angular/router": "^3.4.0",
-    "@types/lodash": "^4.14.52",
     "core-js": "^2.4.1",
     "lodash": "^4.17.4",
-    "rxjs": "^5.1.0",
-    "zone.js": "^0.7.6"
+    "rxjs": "^5.1.0"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.52",
     "@angular/cli": "1.0.0-beta.32.3",
     "@angular/compiler-cli": "^2.4.0",
     "@types/jasmine": "2.5.38",
