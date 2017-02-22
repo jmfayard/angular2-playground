@@ -2,7 +2,7 @@
 rm -rf dist/
 ng build
 
-cd build
+cd dist
 touch Staticfile
 npm version > VERSION
 git init
