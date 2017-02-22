@@ -7,11 +7,12 @@ import {ProgrammingQuoteService} from './quote.service';
   template: `
 
 <p class="pl4"> 
+
 <a (click)="newQuote()" 
 class="f6 link dim br-pill ph3 pv2 mb2 dib white bg-mid-gray"
 >
 
-  New quote
+  New Random quote
 </a>
 </p>  
 <div class="pa4">

@@ -28,7 +28,7 @@ let appRoutes: Routes = [
   },
   { path: 'user/login', component: LoginComponent
   },
-  { path: 'country/:id',      component: CountryDetailComponent },
+  { path: 'country/:iso',      component: CountryDetailComponent },
   { path: '',
     redirectTo: '/country',
     pathMatch: 'full'
